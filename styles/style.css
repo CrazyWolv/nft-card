@@ -124,6 +124,13 @@ body{
     opacity:1;
 }
 
+.nft-card--allText{
+    position:relative;
+    width:100%;
+    height:100%;
+    z-index:99;
+}
+
 
     /* NFT Card Title */
     .nft-card--title{
