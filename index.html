@@ -4,25 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
 </head>
 <body>
 
-  Equilibrium #3429
+  <div class='nft-card-container'>
+    <div class='nft-card'>
+      <div class=='nft-card-content'>
+        <div class='nft-card-image-container'>
+          <!-- <div class='nft-card--image-preview-container'>
+            <img class='nft-card--image-preview' src="images/icon-view.svg" title='View image' alt='View image' />
+          </div> -->
+          <img class='nft-card--image' src="images/image-equilibrium.jpg" title="Equilibrium" alt="Equilibrium" />
+        </div>
+        <div class='nft-card--title'>Equilibrium #3429</div>
 
-  Our Equilibrium collection promotes balance and calm.
+        <div class='nft-card--paragraph'>Our Equilibrium collection promotes balance and calm.</div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+        <div class='nft-card--currency-nd-time'>
+          <div class='nft-card--currency'><img src='images/icon-ethereum.svg' class='nft-card--icon' /> 0.041 ETH</div>
+          <div class='nft-card--time'><img src='images/icon-clock.svg' class='nft-card--icon' /> 3 days left</div>
+        </div>
+      
+        <div class='nft-card--author'><img src='images/image-avatar.png' class='nft-card--avatar' /> <div>Creation of <span class='author-name'>Jules Wyvern</span></div></div>
+      </div>
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/CrazyWolv/" target="_blank">CrazyWolv</a>.
   </div>
 </body>
 </html>

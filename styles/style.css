@@ -1,0 +1,176 @@
+/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* HTML & BODY -- Generals */
+html, body {
+    height: 100%;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    color:hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+
+/* All Displays for NFT Card and it's content */
+.nft-card-container, .nft-card--currency-nd-time, .nft-card--currency, .nft-card--time, .nft-card--author{
+    display:flex;
+}
+.nft-card--image, .nft-card--icon, .nft-card--avatar{
+    display:block;
+}
+
+
+/* NFT card container */
+    .nft-card-container{
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+}
+
+/* NFT Card itself */
+    .nft-card{
+        background-color: hsl(216, 50%, 16%);
+        border-radius:20px;
+        -webkit-border-radius:20px;
+        -moz-border-radius:20px;
+        -ms-border-radius:20px;
+        -o-border-radius:20px;
+        width:15%;
+        padding:20px;
+    }
+
+/* All Content inside NFT card */
+    .nft-card-content{
+        width:100%;
+    }
+
+    /* NFT Card Preview image */
+    .nft-card-image-container{
+        display: inline-block;
+        background: rgb(255,255,255);
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
+
+    .nft-card--image{
+        display:block;
+        width:100%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        transition:all 0.5s;
+        -webkit-transition:all 0.5s;
+        -moz-transition:all 0.5s;
+        -ms-transition:all 0.5s;
+        -o-transition:all 0.5s;
+}
+    
+    .nft-card-image-container .nft-card--image:hover{
+        cursor:pointer;
+        opacity: .5;
+        transition:all 0.5s;
+        -webkit-transition:all 0.5s;
+        -moz-transition:all 0.5s;
+        -ms-transition:all 0.5s;
+        -o-transition:all 0.5s;
+}
+
+/* .nft-card--image-preview-container{
+    position:absolute;
+}
+
+.nft-card--image-preview{
+    position:relative;
+    top:20px;
+    left:20px;
+} */
+
+
+
+    /* NFT Card Title */
+    .nft-card--title{
+        font-size:1.5rem;
+        font-weight: 600;
+        color:hsl(0, 0%, 100%);
+        margin:1em 0 0.5em 0;
+    }
+
+    /* NFT Card Description / Paragraph */
+    .nft-card--paragraph{
+        line-height:25px;
+        font-weight:lighter;
+    }
+
+
+    /* NFT Card price & time left */
+    .nft-card--currency-nd-time{
+        justify-content: space-between;
+        align-items: center;
+        border-bottom:1px solid hsl(215, 32%, 27%);
+        padding:1em 0 1em 0;
+    }
+    /* NFT Card price */
+    .nft-card--currency{
+        font-weight: 400;
+        color:hsl(178, 100%, 50%);
+    }
+    /* NFT card time left */
+    /* .nft-card--time{
+        
+    } */
+
+    /* NFT card Price & Time left icon */
+    .nft-card--icon{
+        margin-right:0.7em;
+    }
+
+    /* NFT card author */
+    .nft-card--author{
+        align-items: center;
+        margin-top:1em;
+    }
+
+    /* Class to space out Author's avatar & text */
+    .nft-card--author div{
+        padding-left:1.2em;
+        font-weight:lighter;
+    }
+
+    /* Class for Author's name */
+    .nft-card--author span.author-name{
+        font-weight:300;
+        color:hsl(0, 0%, 100%);
+    }
+
+    /* NFT Card Author's Avatar */
+    .nft-card--avatar{
+        border:1px solid white;
+        width:35px;
+        height:35px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+}
+
+/* # Media query -- MOBILE */
+@media screen and (max-width: 767px) {
+    .nft-card{
+        width:90%;
+    }
+}
