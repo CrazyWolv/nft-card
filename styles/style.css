@@ -1,13 +1,13 @@
 /* CSS */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; position:relative; bottom:5vh; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
 /* HTML & BODY -- Generals */
 html, body {
-    height: 100%;
+    height:100%;
 }
 
 body{
@@ -39,11 +39,12 @@ body{
 
 /* NFT card container */
     .nft-card-container{
-        height: 100%;
+        height: 100vh;
         padding: 0;
         margin: 0;
         align-items: center;
         justify-content: center;
+        overflow-y:auto;
 }
 
 /* NFT Card itself */
@@ -54,7 +55,7 @@ body{
         -moz-border-radius:20px;
         -ms-border-radius:20px;
         -o-border-radius:20px;
-        width:15%;
+        max-width:15%;
         padding:20px;
     }
 
@@ -209,9 +210,16 @@ body{
         -o-border-radius: 100%;
 }
 
-/* # Media query -- MOBILE */
-@media screen and (max-width: 375px) {
+/* # Media query -- TABLET  */
+@media screen and (min-width: 768px) and (max-width:1224px) {
     .nft-card{
-        width:80%;
+        min-width:50%;
+    }
+}
+
+/* # Media query -- MOBILE */
+@media screen and (max-width: 767px) {
+    .nft-card{
+        min-width:80%;
     }
 }
